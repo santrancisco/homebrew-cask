@@ -6,7 +6,7 @@ cask "clickhouse" do
          intel: "32947c6ec81667466ba4320b971f6ee387fcc4137a8b21ef8396a97e7fdbd043"
 
   url "https://github.com/ClickHouse/ClickHouse/releases/download/v#{version}/clickhouse-macos#{arch}",
-      using: CurlDownloadStrategy,
+      using: curl,
       verified: "github.com/ClickHouse/ClickHouse/"
   name "Clickhouse"
   desc "Column-oriented database management system"
